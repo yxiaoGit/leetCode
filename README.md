@@ -8,3 +8,9 @@
     from this list, for each, select from the next row all valid columns, form a new list, such as (0,x), (1, y) (2, a);    (0,x, (1, y) , (2, c) ... etc.
     keep doing this until reached last row.    this is the list for a selected first row, column (0,x) .
    iterate thru other columns of the first row, get the full valid results.
+
+2. trapping water problem
+   the trapping water problem solved by using two pointers from left and right, to find all boundaries that
+   have height less than both, sum all. The search for peak in the middle is optimized using range maximum query (RMQ),
+   which is built upon a car titian binary tree of the height array,
+   then built static Eula tour array to find least common ancestor (LCA) of the two index. 
